@@ -55,7 +55,7 @@ def show_postions_as_list(equity, market_value):
                                      reverse=True):
         total_change = float(values["percent_change"])
         status = get_colored_status(total_change)
-        change_with_status = status + str(total_change) + "%"
+        change_with_status = status + " " + str(abs(total_change)) + "%"
 
         allocation = round(float(values["equity"]) / equity * 100, 2)
         print(stock_info.format(stock_name, values["equity"],
@@ -64,7 +64,7 @@ def show_postions_as_list(equity, market_value):
 
 
 def main():
-    username = os.environ["ROBINHOOD_USERNAME"]	
+    username = os.environ["ROBINHOOD_USERNAME"]
     password = os.environ["ROBINHOOD_PASSWORD"]
     r.login(username, password)
     equity, market_value = return_equity_and_market_value()
