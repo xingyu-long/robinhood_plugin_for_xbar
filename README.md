@@ -1,6 +1,6 @@
 # Robinhood plugin for xbar
 This plugin provides the easiest way to access your portfolio value and held positions.
-![Example][./screenshot/example.jpg]
+![Example](screenshot/example.jpg)
 
 ## How to use it
 * Download the latest release of [xbar](https://github.com/matryer/xbar#get-started).
