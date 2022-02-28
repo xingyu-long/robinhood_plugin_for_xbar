@@ -8,7 +8,6 @@
 # <xbar.desc></xbar.desc>
 # <xbar.image></xbar.image>
 # <xbar.dependencies>python,robin_stocks</xbar.dependencies>
-import os
 
 import robin_stocks.robinhood as r
 
@@ -60,12 +59,13 @@ def show_postions_as_list(equity, market_value):
         allocation = round(float(values["equity"]) / equity * 100, 2)
         print(stock_info.format(stock_name, values["equity"],
                                 str(allocation) + "%", change_with_status))
-    print(stock_info.format("Cash", str(cash_position), str(cash_percentage) + "%", "---"))
+    print(stock_info.format("Cash", str(cash_position),
+                            str(cash_percentage) + "%", "---"))
 
 
 def main():
-    username = os.environ["ROBINHOOD_USERNAME"]
-    password = os.environ["ROBINHOOD_PASSWORD"]
+    username = "<YOUR_ROBINHOOD_USERNAME>"
+    password = "<YOUR_ROBINHOOD_PASSWORD>"
     r.login(username, password)
     equity, market_value = return_equity_and_market_value()
     show_postions_as_list(equity, market_value)
