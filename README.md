@@ -1,12 +1,12 @@
 # Robinhood plugin for xbar
-This plugin provides the easiest way to access your portfolio value and held positions.
+This plugin provides the easiest way to access your portfolio value and holdings.
 ![Example](screenshot/example.jpg)
 
 ## How to use it
 * Download the latest release of [xbar](https://github.com/matryer/xbar#get-started).
 * Install [robin-stocks](https://github.com/jmfernandes/robin_stocks) package.
   ```
-  $ pip install robin_stocks
+  $ /usr/local/bin/python3 -m pip install robin_stocks
   ```
 * Clone this repo and modify username and password
   ```
@@ -26,5 +26,4 @@ This plugin provides the easiest way to access your portfolio value and held pos
   sms code = input('Enter Robinhood code for validation: ")
   EOFError: EOF when reading a line
   ```
-  Solution: You can run this script with your terminal first and fill the verification code. But it should be fixed later
-  with proper prompt. 
+  Solution: You can run this script with your terminal first and fill the verification code.

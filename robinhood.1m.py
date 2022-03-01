@@ -5,8 +5,8 @@
 # <xbar.version>v1.0</xbar.version>
 # <xbar.author>Xingyu Long</xbar.author>
 # <xbar.author.github>xingyu-long</xbar.author.github>
-# <xbar.desc></xbar.desc>
-# <xbar.image></xbar.image>
+# <xbar.desc>Provides the easiest way to access your portfolio value and holdings.</xbar.desc>
+# <xbar.image>https://i.imgur.com/PzTbwzf.jpg</xbar.image>
 # <xbar.dependencies>python,robin_stocks</xbar.dependencies>
 
 import robin_stocks.robinhood as r
