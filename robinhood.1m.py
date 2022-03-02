@@ -50,7 +50,7 @@ def show_postions_as_list(equity, market_value):
     cash_position = round(equity - market_value, 2)
     cash_percentage = round(cash_position / equity * 100, 2)
     for stock_name, values in sorted(my_stocks.items(),
-                                     key=lambda kv: kv[1]["percentage"],
+                                     key=lambda kv: float(kv[1]["percentage"]),
                                      reverse=True):
         total_change = float(values["percent_change"])
         status = get_colored_status(total_change)
